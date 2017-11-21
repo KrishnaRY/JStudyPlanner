@@ -30,7 +30,7 @@
 	<global-method-security secured-annotations="enabled" />
 
 	<!-- Authentication against database -->
-	<!--  <authentication-manager>
+	 <authentication-manager>
 		<authentication-provider>
 			<jdbc-user-service data-source-ref="dataSource"
 				users-by-username-query="SELECT username, password, enabled FROM user WHERE username=?"
@@ -43,10 +43,10 @@
 					END AS role
 					FROM user WHERE username=?" />
 		</authentication-provider>
-	</authentication-manager>-->
+	</authentication-manager>
 	
 	<!-- In memory user repository -->
-	<authentication-manager>
+	<!--  <authentication-manager>
 		<authentication-provider>
 			<user-service>
 				<user name="admin" password="admin" authorities="ROLE_ADMIN" />
@@ -54,6 +54,6 @@
 				<user name="student" password="student" authorities="ROLE_STUDENT" />
 			</user-service>
 		</authentication-provider>
-	</authentication-manager>
+	</authentication-manager>-->
 	
 </beans:beans>

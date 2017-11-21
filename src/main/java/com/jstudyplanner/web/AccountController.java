@@ -22,7 +22,7 @@ public class AccountController {
     
     @RequestMapping(value = "/loginPage", method = RequestMethod.GET)
     public String loginPage() {
-//    	System.out.println("performing AccountController.loginPage()");
+    	System.out.println("performing AccountController.loginPage()==>>>>>>>>>>>>>>>");
         return "loginPage";
     }
 	

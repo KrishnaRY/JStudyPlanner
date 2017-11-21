@@ -1,3 +1,13 @@
-security:
-  basic:
+--- 
+security: 
+  basic: 
     enabled: false
+server: 
+  error: 
+    whitelabel: 
+      enabled: false
+  port: 8081
+spring: 
+  mvc.view: 
+    prefix: /WEB-INF/
+    suffix: .jsp
